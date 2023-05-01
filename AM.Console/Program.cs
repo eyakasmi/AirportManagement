@@ -20,5 +20,8 @@ Plane plane3 = new Plane
     PlaneId = 2
 };
 
+Passenger passenger1 = new Passenger { FirstName = "steave", LastName = "jobs", EmailAddress = "steeve.jobs@gmail.com", BirthDate = new DateTime(1955, 01, 01) };
+Console.WriteLine(passenger1.CheckProfile("Steave", "Jobs"));
+Console.WriteLine(passenger1.CheckProfile("steave", "jobs", "steeve.jobs@gmail"));
 
 

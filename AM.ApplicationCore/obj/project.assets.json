@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
       "projectName": "AM.ApplicationCore",
-      "projectPath": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\mariem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mariem\\AppData\\Roaming\\NuGet\\NuGet.Config",

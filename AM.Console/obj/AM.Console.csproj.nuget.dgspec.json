@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.Console\\AM.Console.csproj": {}
+    "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.Console\\AM.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+    "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
         "projectName": "AM.ApplicationCore",
-        "projectPath": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+        "projectPath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\mariem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\obj\\",
+        "outputPath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mariem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.Console\\AM.Console.csproj": {
+    "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.Console\\AM.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.Console\\AM.Console.csproj",
+        "projectUniqueName": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.Console\\AM.Console.csproj",
         "projectName": "AM.Console",
-        "projectPath": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.Console\\AM.Console.csproj",
+        "projectPath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.Console\\AM.Console.csproj",
         "packagesPath": "C:\\Users\\mariem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.Console\\obj\\",
+        "outputPath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.Console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mariem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\mariem\\Desktop\\eya\\.net\\ai\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
+              "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
               }
             }
           }
