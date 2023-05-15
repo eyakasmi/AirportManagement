@@ -10,7 +10,7 @@ namespace AM.ApplicationCore.Interfaces
     public interface IServiceFlight
     {
         List<DateTime> GetFlightDates(string destination);
-        List<Flight> GetFlights(string filterType, string filterValue);
+        void GetFlights(string filterType, string filterValue);
         void ShowFlightDetails(Plane plane);
         int ProgrammedFlightNumber(DateTime startDate);
         double DurationAverage(string destination);
