@@ -16,20 +16,14 @@ namespace AM.ApplicationCore.Domain
     public class Plane
 
     {
-
-        #region prop de base
         public int PlaneId { get; set; }
+
         public PlaneType PlaneType { get; set; }
+
         public DateTime ManufactureDate { get; set; }
         public int Capacity { get; set; }
 
-        #endregion
-
-        #region prop de navigation
-        public IList<Flight> Flights { get; set; }
-
-
-        #endregion
+        public virtual List<Flight> Flights { get; set; }
 
         public Plane(PlaneType planeType, DateTime manufactureDate, int capacity)
         {
@@ -40,6 +34,11 @@ namespace AM.ApplicationCore.Domain
 
         public Plane()
         {
+        }
+
+        public override string ToString()
+        {
+            return "PlaneType: " + PlaneType + " ManufactureDate: " + ManufactureDate + " Capacity: " + Capacity;
         }
     }
 }

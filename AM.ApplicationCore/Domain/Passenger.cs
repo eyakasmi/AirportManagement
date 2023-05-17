@@ -10,6 +10,7 @@ namespace AM.ApplicationCore.Domain
     {
 
 
+        public int Id { get; set; }
         public string PassportNumber { get; set; }
         public string FirstName { get; set; }
 
