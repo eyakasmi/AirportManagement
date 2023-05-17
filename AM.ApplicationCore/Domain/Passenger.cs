@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,14 +11,24 @@ namespace AM.ApplicationCore.Domain
     {
 
 
-        public int Id { get; set; }
+        // public int Id { get; set; }
+        [Key]
+        [StringLength(7)]
         public string PassportNumber { get; set; }
+
+        [MinLength(3, ErrorMessage ="Invalid!"),MaxLength(25)]
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
 
+        [Display(Name ="Date Of Birth")]
+        //[DisplayName="Date Of Birth"]
+        [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
         public int? TelNumber { get; set; }
+
+        [DataType(DataType.EmailAddress)]
+       // [EmailAddress]
         public string? EmailAddress { get; set; }
 
         public  IList<Flight> Flights { get; set; }

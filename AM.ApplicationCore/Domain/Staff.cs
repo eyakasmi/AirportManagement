@@ -10,10 +10,12 @@ namespace AM.ApplicationCore.Domain
     public class Staff : Passenger
     {
 
-        [DataType(DataType.Currency)]
+        
 
         public string Function { get; set; }
         public DateTime EmployementDate { get; set; }
+
+        [DataType(DataType.Currency)] //une valeur monétaire
         public double Salary { get; set; }
 
         public virtual void PassengerType()
