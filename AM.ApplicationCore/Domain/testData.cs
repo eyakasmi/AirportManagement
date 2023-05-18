@@ -8,6 +8,7 @@ namespace AM.ApplicationCore.Domain
 {
     public static class TestData
     {
+
         public static Plane BoingPlane = new Plane { PlaneType = PlaneType.Boing, Capacity = 150, ManufactureDate = new DateTime(2015, 02, 03) };
         public static Plane Airbusplane = new Plane { PlaneType = PlaneType.Airbus, Capacity = 250, ManufactureDate = new DateTime(2020, 11, 11) };
         // Staffs

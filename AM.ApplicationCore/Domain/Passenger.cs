@@ -5,10 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace AM.ApplicationCore.Domain
 {
     public class Passenger
     {
+        private IList<ReservationTicket> reservationTickets;
 
 
         // public int Id { get; set; }
@@ -24,20 +27,24 @@ namespace AM.ApplicationCore.Domain
         public DateTime BirthDate { get; set; }
 
         [RegularExpression(@"^[0-9]{8}$", ErrorMessage = "Invalid Phone Number!")]
-        [Range(0,8)]
+        [Range(0, 8)]
         public int? TelNumber { get; set; }
 
         [DataType(DataType.EmailAddress)]
-       // [EmailAddress]
+        // [EmailAddress]
         public string? EmailAddress { get; set; }
 
-        public  IList<Flight> Flights { get; set; }
+        public IList<Flight> Flights { get; set; }
+
+        public IList<ReservationTicket> ReservationTickets { get; set; }
+
+        
 
         public override string ToString()
         {
             return "FirstName: " + FullName.FirstName + " LastName: " + FullName.LastName + " date of Birth: " + BirthDate;
         }
-       
+
         public bool CheckProfile(string firstName, string lastName)
         {
             return FullName.FirstName == firstName && FullName.LastName == lastName;
@@ -45,14 +52,14 @@ namespace AM.ApplicationCore.Domain
 
         public bool CheckProfile(string firstName, string lastName, string email)
         {
-            return CheckProfile(firstName,lastName) && EmailAddress ==  email;
+            return CheckProfile(firstName, lastName) && EmailAddress == email;
         }
 
-        public bool login (string firstName, string lastName, string email=null)
+        public bool login(string firstName, string lastName, string email = null)
         {
-            return email!=null ? CheckProfile(firstName, lastName, email) : CheckProfile(firstName, lastName);
+            return email != null ? CheckProfile(firstName, lastName, email) : CheckProfile(firstName, lastName);
         }
-        
+
         public virtual void PassengerType()
         {
             Console.WriteLine("I am a passenger");

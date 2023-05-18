@@ -19,6 +19,9 @@ namespace AM.Infrastructure
         public DbSet<Passenger> Passengers { get; set; }
         public DbSet<Staff> Staff { get; set; }
         public DbSet<Traveller> Travellers { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<ReservationTicket> ReservationTickets { get; set; }
+
 
 
         //2- ajouter chaine de connexion
@@ -33,6 +36,7 @@ namespace AM.Infrastructure
         {
             modelBuilder.ApplyConfiguration(new FlightConfigurations());
             modelBuilder.ApplyConfiguration(new PlaneConfiguration());
+            modelBuilder.ApplyConfiguration(new ReservationTicketConfiguration());
 
             //2eme methode de configuration de type complexe
             modelBuilder.Entity<Passenger>()
