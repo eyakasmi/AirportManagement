@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5O7KLQxRBA8TswH4NowrBPMl6B+e7VeO643MAVARURpJ7NOUo8jTDPdisl9JQ6Ze9Bhd2OwfztItWgxzhHhVZw==",
+  "dgSpecHash": "4W4Ver14cVkOIINUVuMu0a7D5F8Frxrn+6/KgAAeuWXv4JGJzIyeG61pwSFf+Vgj10n0Cdpc/hcT2wwtnZ+1OQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mariem\\Documents\\GitHub\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mariem\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512"
+  ],
   "logs": []
 }

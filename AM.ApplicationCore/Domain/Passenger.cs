@@ -16,12 +16,9 @@ namespace AM.ApplicationCore.Domain
         [StringLength(7)]
         public string PassportNumber { get; set; }
 
-        [MinLength(3, ErrorMessage ="Invalid!"),MaxLength(25)]
-        public string FirstName { get; set; }
+        public FullName FullName { get; set; }
 
-        public string LastName { get; set; }
-
-        [Display(Name ="Date Of Birth")]
+        //[Display(Name ="Date Of Birth")]
         //[DisplayName="Date Of Birth"]
         [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
@@ -35,12 +32,12 @@ namespace AM.ApplicationCore.Domain
 
         public override string ToString()
         {
-            return "FirstName: " + FirstName + " LastName: " + LastName + " date of Birth: " + BirthDate;
+            return "FirstName: " + FullName.FirstName + " LastName: " + FullName.LastName + " date of Birth: " + BirthDate;
         }
        
         public bool CheckProfile(string firstName, string lastName)
         {
-            return FirstName == firstName && LastName == lastName;
+            return FullName.FirstName == firstName && FullName.LastName == lastName;
         }
 
         public bool CheckProfile(string firstName, string lastName, string email)
