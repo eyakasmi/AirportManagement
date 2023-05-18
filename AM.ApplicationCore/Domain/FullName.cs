@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace AM.ApplicationCore.Domain
 {
     //configuration de type détenu (typeComplexe
-    [Owned]
+    //[Owned]
     public class FullName
     {
         [MinLength(3, ErrorMessage = "Invalid!"), MaxLength(25)]

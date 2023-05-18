@@ -22,6 +22,9 @@ namespace AM.ApplicationCore.Domain
         //[DisplayName="Date Of Birth"]
         [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
+
+        [RegularExpression(@"^[0-9]{8}$", ErrorMessage = "Invalid Phone Number!")]
+        [Range(0,8)]
         public int? TelNumber { get; set; }
 
         [DataType(DataType.EmailAddress)]

@@ -1,4 +1,5 @@
 ﻿using AM.ApplicationCore.Domain;
+using AM.Infrastructure.Configurations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -28,7 +29,33 @@ namespace AM.Infrastructure
             base.OnConfiguring(optionsBuilder);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new FlightConfigurations());
+            modelBuilder.ApplyConfiguration(new PlaneConfiguration());
 
+            //2eme methode de configuration de type complexe
+            modelBuilder.Entity<Passenger>()
+
+                 .OwnsOne(p => p.FullName, f =>
+                 {
+                     f.Property(f => f.FirstName).HasMaxLength(30).HasColumnName("PassFirstName");
+                     f.Property(f => f.LastName).HasColumnName("PassLastName").IsRequired();
+                 });
+
+           
+
+        }
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+             configurationBuilder.Properties<DateTime>() // ay haja entre <> : est un type de prop / et entre () : un nom de prop
+                .HaveColumnType("Date"); //type de la colone
+
+            /*configurationBuilder.Properties<string>()
+                .HaveMaxLength(50); // chaque strig a max lenghth = 50 */
+        }
+
+    
 
 
 
