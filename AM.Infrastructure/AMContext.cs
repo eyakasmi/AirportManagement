@@ -43,7 +43,19 @@ namespace AM.Infrastructure
                      f.Property(f => f.LastName).HasColumnName("PassLastName").IsRequired();
                  });
 
-           
+            //Heritage
+
+            //configuration de TPH
+           /* modelBuilder.Entity<Passenger>()
+            .HasDiscriminator<int>("PassengerType")
+            .HasValue<Passenger>(0)
+            .HasValue<Traveller>(1)
+            .HasValue<Staff>(2);*/
+
+            //configuration de TPT
+            modelBuilder.Entity<Staff>().ToTable("Staffs");
+            modelBuilder.Entity<Traveller>().ToTable("Travellers");
+
 
         }
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
